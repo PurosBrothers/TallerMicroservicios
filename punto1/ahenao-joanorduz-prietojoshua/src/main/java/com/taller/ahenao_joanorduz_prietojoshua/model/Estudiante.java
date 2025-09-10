@@ -11,6 +11,11 @@ public class Estudiante {
         this.correo = correo;
     }
 
+    public Estudiante(String nombre, String correo) {
+        this.nombre = nombre;
+        this.correo = correo;
+    }
+
     public Estudiante() {
     }
 

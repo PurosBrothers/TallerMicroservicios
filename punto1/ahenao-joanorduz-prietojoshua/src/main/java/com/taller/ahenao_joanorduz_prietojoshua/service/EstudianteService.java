@@ -14,6 +14,7 @@ import jakarta.annotation.PostConstruct;
 public class EstudianteService {
     @Autowired
     private EstudianteRepository repo;
+    private Estudiante estudiante;
 
     @PostConstruct
     public void init() {
@@ -27,7 +28,9 @@ public class EstudianteService {
     }
 
     public Estudiante getEstudianteById(Long id) {
-        return repo.findById(id);
+        estudiante = repo.findById(id);
+        Estudiante es = new Estudiante(estudiante.getId(), estudiante.getNombre(), estudiante.getCorreo());
+        return es;
     }
 
 }
