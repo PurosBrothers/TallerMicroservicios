@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TallerMicroserviciosApplication<tallerMicroservicios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.taller.tallerMicroservicios.TallerMicroserviciosApplication",
+            "projectName": "tallerMicroservicios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ConfigServerApplication<config-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.config_ms.config_server.ConfigServerApplication",
+            "projectName": "config-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
