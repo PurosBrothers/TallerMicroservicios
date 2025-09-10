@@ -4,7 +4,7 @@ spring:
 
   cloud:
     config:
-      enabled: false #
+      enabled: false
 
 eureka:
   client:
@@ -12,3 +12,15 @@ eureka:
 
 server:
   port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
