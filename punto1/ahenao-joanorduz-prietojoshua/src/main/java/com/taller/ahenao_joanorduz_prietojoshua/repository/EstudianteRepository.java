@@ -24,4 +24,8 @@ public class EstudianteRepository {
         return estudiantes;
     }
 
+    public Estudiante findById(Long id) {
+        return estudiantes.get(id);
+    }
+
 }

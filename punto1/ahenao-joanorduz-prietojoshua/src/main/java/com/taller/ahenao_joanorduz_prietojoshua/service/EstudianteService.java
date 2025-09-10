@@ -26,4 +26,8 @@ public class EstudianteService {
         return repo.findAll().values().stream().toList();
     }
 
+    public Estudiante getEstudianteById(Long id) {
+        return repo.findById(id);
+    }
+
 }

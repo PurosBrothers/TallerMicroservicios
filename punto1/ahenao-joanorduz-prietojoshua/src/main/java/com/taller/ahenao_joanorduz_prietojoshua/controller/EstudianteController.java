@@ -27,4 +27,9 @@ public class EstudianteController {
         return estudiantes.isEmpty() ? ResponseEntity.noContent().build() : ResponseEntity.ok(estudiantes);
     }
 
+    @GetMapping("/person/{id}")
+    public ResponseEntity<Estudiante> getById(@org.springframework.web.bind.annotation.PathVariable Long id) {
+        estudiante = service.getEstudianteById(id);
+        return estudiante == null ? ResponseEntity.notFound().build() : ResponseEntity.ok(estudiante);
+    }
 }
