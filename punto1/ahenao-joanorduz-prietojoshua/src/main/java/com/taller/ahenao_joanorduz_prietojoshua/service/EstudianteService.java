@@ -29,7 +29,7 @@ public class EstudianteService {
 
     public Estudiante getEstudianteById(Long id) {
         estudiante = repo.findById(id);
-        Estudiante es = new Estudiante(estudiante.getId(), estudiante.getNombre(), estudiante.getCorreo());
+        Estudiante es = new Estudiante(estudiante.getNombre(), estudiante.getCorreo());
         return es;
     }
 
