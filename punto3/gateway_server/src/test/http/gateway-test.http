@@ -1,0 +1,15 @@
+@host=http://localhost:8080/ahenao-joanorduz-prietojoshua
+###
+GET {{host}}/taller/person
+
+###
+GET {{host}}/taller/person/1
+
+###
+GET {{host}}/taller/person/2
+
+###
+GET {{host}}/taller/person/3
+
+###
+GET {{host}}/actuator/info
