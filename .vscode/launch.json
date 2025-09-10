@@ -18,6 +18,27 @@
             "mainClass": "com.config_ms.config_server.ConfigServerApplication",
             "projectName": "config-server",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=34031 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=config-server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaServerApplication<eureka_server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.eureka_server.EurekaServerApplication",
+            "projectName": "eureka_server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AhenaoJoanorduzPrietojoshuaApplication<ahenao-joanorduz-prietojoshua>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.taller.ahenao_joanorduz_prietojoshua.AhenaoJoanorduzPrietojoshuaApplication",
+            "projectName": "ahenao-joanorduz-prietojoshua",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]
