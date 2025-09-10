@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.taller</groupId>
-	<artifactId>tallerMicroservicios</artifactId>
+	<artifactId>ahenao-joanorduz-prietojoshua</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>tallerMicroservicios</name>
+	<name>ahenao-joanorduz-prietojoshua</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -38,6 +38,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

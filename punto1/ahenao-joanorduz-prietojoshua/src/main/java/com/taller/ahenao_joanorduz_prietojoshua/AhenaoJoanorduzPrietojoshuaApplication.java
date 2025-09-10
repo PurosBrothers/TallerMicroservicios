@@ -1,13 +1,13 @@
-package com.taller.tallerMicroservicios;
+package com.taller.ahenao_joanorduz_prietojoshua;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TallerMicroserviciosApplication {
+public class AhenaoJoanorduzPrietojoshuaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TallerMicroserviciosApplication.class, args);
+		SpringApplication.run(AhenaoJoanorduzPrietojoshuaApplication.class, args);
 	}
 
 }

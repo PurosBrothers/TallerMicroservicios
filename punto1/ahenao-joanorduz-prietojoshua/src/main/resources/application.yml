@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ahenao-joanorduz-prietojoshua
+
+  cloud:
+    config:
+      enabled: false #
+
+eureka:
+  client:
+    enabled: false
+
+server:
+  port: 8080
